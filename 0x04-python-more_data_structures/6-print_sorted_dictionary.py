@@ -1,13 +1,13 @@
 !/usr/bin/python3
 
 
-def print_sorted_dictionary(my_dict):
+def print_sorted_dictionary(a_dictionary):
 
     keys = []
-    if my_dict:
-        for k, i in my_dict.items():
+    if a_dictionary:
+        for k, i in a_dictionary.items():
             keys.append(k)
 
         keys.sort()
         for k in keys:
-            print("{}: {}".format(k, my_dict[k]))
+            print("{}: {}".format(k, a_dictionary[k]))
