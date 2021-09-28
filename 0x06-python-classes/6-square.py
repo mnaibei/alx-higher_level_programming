@@ -1,7 +1,10 @@
 #!/usr/bin/python3
+"""Define a class square"""
+
+
 class Square():
     '''
-        Defining a Square
+        represent a Square
     '''
 
     def __init__(self, size=0, position=(0, 0)):
@@ -46,22 +49,22 @@ class Square():
             value (int): tuple of two positve numbers.
         '''
         if isinstance(value, tuple) and len(value) == 2:
-                if isinstance(value[0], int) and isinstance(value[1], int):
-                    if value[0] >= 0 and value[1] >= 0:
-                        self.__position = value
-                        return
-        raise TypeError("position must be a tuple of 2 positive integers")
+            if isinstance(value[0], int) and isinstance(value[1], int):
+                if value[0] >= 0 and value[1] >= 0:
+                    self.__position = value
+                    return
+                raise TypeError("position must be a tuple of 2 positive integers")
 
-    def my_print(self):
-        '''
-            prints in stdout the square with the character # or a new line
-            is size is zero.
-        '''
-        if self.__size == 0:
-            print()
-            return
+            def my_print(self):
+                '''
+                prints in stdout the square with the character # or a new line
+                is size is zero.
+                '''
+                if self.__size == 0:
+                    print()
+                    return
 
-        for line in range(self.__position[1]):
-                print()
-        for col in range(self.__size):
-            print("{}{}".format(" " * self.__position[0], "#" * self.__size))
+                for line in range(self.__position[1]):
+                    print()
+                    for col in range(self.__size):
+                        print("{}{}".format(" " * self.__position[0], "#" * self.__size))
