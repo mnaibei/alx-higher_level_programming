@@ -2,10 +2,11 @@
 """Define class square"""
 
 
-class Square():
+class Square:
     def __init__(self, size):
         """Initialization of instance attributes
-            Args:
+
+        Args:
             size (int): The size of the square
         """
         self.__size = size
