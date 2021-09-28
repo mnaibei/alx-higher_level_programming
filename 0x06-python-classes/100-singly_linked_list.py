@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Defining a class node"""
+
+
 class Node():
     '''Describes a node
         Args:
