@@ -61,4 +61,3 @@ class TestMaxInteger(unittest.TestCase):
             Testing with all the list values equal to each other
         '''
         self.assertEqual(max_integer([1]), 1)
-

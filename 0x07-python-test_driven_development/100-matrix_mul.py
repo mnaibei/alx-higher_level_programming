@@ -16,7 +16,7 @@ def matrix_mul(m_a, m_b):
         for idx, n in enumerate(a_list):
             try:
                 for idp, p in enumerate(m_b[idx]):
-                        tmp_list[idp] += n * p
+                    tmp_list[idp] += n * p
             except Exception:
                 raise ValueError("m_a and m_b can't be multiplied")
         new_matrix.append(tmp_list)
