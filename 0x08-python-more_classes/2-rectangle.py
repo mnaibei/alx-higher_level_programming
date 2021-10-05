@@ -5,10 +5,10 @@
 
 
 class Rectangle:
+     '''class: Rectangle this is an empty class
+    '''
+     
     def __init__(self, width=0, height=0):
-        '''
-            Calling the setters to initialize the instance variables
-        '''
         self.height = height
         self.width = width
 
